@@ -24,7 +24,7 @@
   <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
     <div class="container d-flex align-items-center justify-content-between">
       <div class="logo">
-        <h1><a href="index.html">TB-Bank<i class="fa fa-bank" style="color:#fff"></i></a></h1>
+        <h1><a href="index.php">TB-Bank<i class="fa fa-bank" style="color:#fff"></i></a></h1>
       </div>
       <nav id="navbar" class="navbar">
         <ul>
