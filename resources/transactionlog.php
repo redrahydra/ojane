@@ -1,3 +1,17 @@
+
+  <?php
+  if(isset($_POST["submit"]))
+   { 
+    include 'config.php';
+    $sql ="DELETE from transaction";
+    $query =mysqli_query($conn, $sql);
+    if($query){
+        echo "<script> alert('Cleared');
+                        window.location='transactionlog.php';
+              </script>";   
+           }                
+   }
+   ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +30,7 @@
   <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="css/style2.css" rel="stylesheet">
+  
 </head>
 
 <body>
@@ -76,7 +91,14 @@
   <br>
   <br>
   <br>
+
 </main>
+<section>
+  <form method ="post">
+  <input type="submit" name="submit" class = "btn" value = "clear_logs">
+  </form>
+
+</section>
 <br><br><br><br><br><br><br><br><br>
   <footer id="footer">
     <div class="container">
